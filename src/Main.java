@@ -10,8 +10,8 @@ public class Main {
         rentalService.addCar(hatchback);
         rentalService.addCar(suv);
 
-        Customer individualCustomer = new IndividualCustomer("John Doe", "0532 123 45 67", "12345678901");
-        Customer corporateCustomer = new CorporateCustomer("XYZ Ltd. Co.", "0212 123 45 67", "9876543210");
+        Customer individualCustomer = new IndividualCustomer("Eren Culhacı", "0532 123 45 67", "12345678901");
+        Customer corporateCustomer = new CorporateCustomer("Koç Holding", "0212 123 45 67", "9876543210");
 
         System.out.println("Available cars for individual customer:");
         for (Car car : rentalService.getAvailableCars(individualCustomer)) {
@@ -23,22 +23,22 @@ public class Main {
             System.out.println(car.getBrand() + " " + car.getModel());
         }
 
-        System.out.println("\n10-day rental cost for hatchback car for individual customer:");
+        System.out.println("\n10-day rental cost for hatchback car for individual customer: " + individualCustomer.getName());
         System.out.println(rentalService.rentCar(individualCustomer, hatchback, 10) + " ₺");
 
-        System.out.println("\n5-day rental cost for SUV car for corporate customer:");
+        System.out.println("\n5-day rental cost for SUV car for corporate customer: " + corporateCustomer.getName());
         System.out.println(rentalService.rentCar(corporateCustomer, suv, 5) + " ₺");
 
-        System.out.println("\nMonthly rental cost for sedan car for individual customer:");
+        System.out.println("\nMonthly rental cost for sedan car for individual customer: " + individualCustomer.getName());
         System.out.println(rentalService.rentCar(individualCustomer, sedan, 30) + " ₺");
 
-        System.out.println("\nMonthly rental cost for hatchback car for individual customer:");
+        System.out.println("\nMonthly rental cost for hatchback car for individual customer: " + individualCustomer.getName());
         System.out.println(rentalService.rentCar(individualCustomer, hatchback, 30) + " ₺");
 
-        System.out.println("\nMonthly rental cost for sedan car for corporate customer:");
+        System.out.println("\nMonthly rental cost for sedan car for corporate customer: " + corporateCustomer.getName());
         System.out.println(rentalService.rentCar(corporateCustomer, sedan, 30) + " ₺");
 
-        System.out.println("\nMonthly rental cost for SUV car for corporate customer:");
+        System.out.println("\nMonthly rental cost for SUV car for corporate customer: " + corporateCustomer.getName());
         System.out.println(rentalService.rentCar(corporateCustomer, suv, 30) + " ₺");
     }
 }

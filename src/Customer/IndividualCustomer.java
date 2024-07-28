@@ -1,3 +1,6 @@
+package Customer;
+import Car.*;
+
 public class IndividualCustomer extends Customer {
     private String nationalId;
 

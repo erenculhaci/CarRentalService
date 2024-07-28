@@ -1,6 +1,9 @@
 import java.util.ArrayList;
 import java.util.List;
 
+import Car.*;
+import Customer.*;
+
 public class CarRentalService {
     private List<Car> cars;
 

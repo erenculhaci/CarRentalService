@@ -1,3 +1,6 @@
+package Customer;
+import Car.*;
+
 public abstract class Customer {
     private String name;
     private String phoneNumber;

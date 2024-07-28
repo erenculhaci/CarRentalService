@@ -1,3 +1,5 @@
+package Car;
+
 public abstract class Car {
     private String brand;
     private String model;

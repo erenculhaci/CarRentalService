@@ -1,3 +1,6 @@
+package Customer;
+import Car.*;
+
 public class CorporateCustomer extends Customer {
     private String taxNumber;
 

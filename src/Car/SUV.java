@@ -1,3 +1,5 @@
+package Car;
+
 public class SUV extends Car {
     private boolean fourWheelDrive;
     private int towingCapacity;

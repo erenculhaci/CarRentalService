@@ -1,3 +1,5 @@
+package Car;
+
 public class Hatchback extends Car {
     private double coefficient;
     private boolean rearSpoiler;

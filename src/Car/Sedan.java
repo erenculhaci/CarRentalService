@@ -1,3 +1,5 @@
+package Car;
+
 public class Sedan extends Car {
     private static final double DISCOUNT_RATE = 0.07;
     private int numberOfDoors;

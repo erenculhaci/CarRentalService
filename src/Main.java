@@ -1,3 +1,6 @@
+import Car.*;
+import Customer.*;
+
 public class Main {
     public static void main(String[] args) {
         CarRentalService rentalService = new CarRentalService();
